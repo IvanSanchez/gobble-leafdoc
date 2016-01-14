@@ -1,0 +1,21 @@
+{
+  "name": "gobble-leafdoc",
+  "version": "0.1.0",
+  "description": "Gobble plugin to generate Leafdoc (🍂doc) documentation.",
+  "main": "gobble-leafdoc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gobble",
+    "gobble-plugin",
+    "documentation"
+  ],
+  "author": "Iván Sánchez Ortega <ivan@sanchezortega.es>",
+  "license": "Beerware",
+  "dependencies": {
+    "leafdoc": "^1.2.0",
+    "sander": "^0.4.0",
+    "sandermatch": "^0.1.0"
+  }
+}
