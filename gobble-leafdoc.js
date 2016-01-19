@@ -14,7 +14,7 @@ function leafdoc ( inputdir, outputdir, options/*, callback */) {
 	if (options.files) {
 		files = sander.lsr( inputdir );
 	} else {
-		files = sander.lsrMatch( inputdir, options.files );
+		files = sandermatch.lsrMatch( inputdir, options.files );
 	}
 	
 	return files.then( function(filenames) {
