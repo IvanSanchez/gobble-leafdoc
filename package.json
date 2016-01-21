@@ -1,6 +1,6 @@
 {
   "name": "gobble-leafdoc",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "Gobble plugin to generate Leafdoc (🍂doc) documentation.",
   "main": "gobble-leafdoc.js",
   "scripts": {
@@ -16,6 +16,6 @@
   "dependencies": {
     "leafdoc": "^1.2.0",
     "sander": "^0.4.0",
-    "sandermatch": "^0.1.1"
+    "sandermatch": "^0.1.2"
   }
 }
