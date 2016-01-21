@@ -12,12 +12,14 @@ function leafdoc ( inputdir, outputdir, options/*, callback */) {
 	if (!options.output) { options.output = 'leafdoc.html'; }
 	
 	if (options.files) {
-		files = sander.lsr( inputdir );
-	} else {
 		files = sandermatch.lsrMatch( inputdir, options.files );
+	} else {
+		files = sander.lsr( inputdir );
 	}
 	
 	return files.then( function(filenames) {
+		var logged = false;
+		console.log(filenames);
 		for (var i in filenames) {
 			doc.addFile(path.join(inputdir, filenames[i]), path.extname(filenames[i]) !== '.leafdoc');
 		}
