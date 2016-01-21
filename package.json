@@ -1,6 +1,6 @@
 {
   "name": "gobble-leafdoc",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Gobble plugin to generate Leafdoc (🍂doc) documentation.",
   "main": "gobble-leafdoc.js",
   "scripts": {
