@@ -19,9 +19,12 @@ function leafdoc ( inputdir, outputdir, options/*, callback */) {
 	
 	return files.then( function(filenames) {
 		var logged = false;
-		for (var i in filenames) {
-			doc.addFile(path.join(inputdir, filenames[i]), path.extname(filenames[i]) !== '.leafdoc');
-		}
+		console.log('gobble-leafdoc files: ', filenames);
+		filenames.forEach(function(filename) {
+			console.log('gobble-leafdoc now processing file:', filename);
+			doc.addFile(path.join(inputdir, filename), path.extname(filename) !== '.leafdoc');
+		})
+		
 		return sander.writeFile(outputdir, options.output, doc.outputStr() );
 	} );
 
