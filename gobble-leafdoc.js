@@ -19,9 +19,7 @@ function leafdoc ( inputdir, outputdir, options/*, callback */) {
 	
 	return files.then( function(filenames) {
 		var logged = false;
-		console.log('gobble-leafdoc files: ', filenames);
 		filenames.forEach(function(filename) {
-			console.log('gobble-leafdoc now processing file:', filename);
 			doc.addFile(path.join(inputdir, filename), path.extname(filename) !== '.leafdoc');
 		})
 		
