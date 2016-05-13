@@ -14,7 +14,7 @@
   "author": "Iván Sánchez Ortega <ivan@sanchezortega.es>",
   "license": "Beerware",
   "dependencies": {
-    "leafdoc": "^1.2.0",
+    "leafdoc": "^1.3.1",
     "sander": "^0.4.0",
     "sandermatch": "^0.1.2"
   }
