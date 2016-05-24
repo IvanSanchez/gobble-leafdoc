@@ -11,6 +11,10 @@
     "gobble-plugin",
     "documentation"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IvanSanchez/gobble-leafdoc.git"
+  },
   "author": "Iván Sánchez Ortega <ivan@sanchezortega.es>",
   "license": "Beerware",
   "dependencies": {
